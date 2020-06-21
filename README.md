@@ -1,6 +1,6 @@
 # ABC inventory management Frontend
 
-Frontend for ABC inventory management module built using ```React.JS (Hooks & full cunctional components)```, ```Redux```, ```Semantic-UI-React```, ```Axios```
+Frontend for ABC inventory management module built using ```React.JS (Hooks & full functional components)```, ```Redux```, ```Semantic-UI-React```, ```Axios```
 
 # Features
 
