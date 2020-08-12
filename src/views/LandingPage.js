@@ -1,6 +1,11 @@
 import React from 'react';
-import { Header, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
+
+import { Field, reduxForm, propTypes } from 'redux-form';
+import TextInput from './components/forms/TextInput';
+import { Button, Header, Icon, Select, Label } from 'semantic-ui-react';
+
+
 
 const LandingPage = (props) => {
   return (
@@ -15,6 +20,8 @@ const LandingPage = (props) => {
     </div>
   );
 };
+
+
 
 function mapStateToProps({ auth }) {
   return { auth }

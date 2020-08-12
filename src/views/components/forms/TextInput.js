@@ -1,6 +1,9 @@
 import React from 'react';
 import { Form, Message } from 'semantic-ui-react';
 
+/** TextInputComponent
+ * @param {*} options { input, label, type, required, meta: { touched, error, warning } } 
+ */
 const TextInputComponent = ({ input, label, type, required, meta: { touched, error, warning } }) => (
     <Form.Field required={required}>
         <label>{label}</label>

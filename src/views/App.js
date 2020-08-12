@@ -6,7 +6,7 @@ import * as actions from '../actions';
 import { viewRoutes } from '../utils/pathUtil';
 
 import Header from './components/partials/Header';
-import LandingPage from './components/partials/LandingPage';
+import LandingPage from './LandingPage';
 import CategoryDashboard from './components/categories/CategoryDashboardPage';
 import ItemDashboard from './components/items/ItemDashboardPage';
 

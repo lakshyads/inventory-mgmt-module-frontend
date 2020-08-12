@@ -35,6 +35,7 @@ export const fetchCategories = () => async dispatch => {
 };
 
 export const addItem = (item) => async dispatch => {
+    debugger
     const res = await axios.post(endpoints.ITEM, item);
 
     dispatch({ type: types.ADD_ITEM, payload: res });

@@ -27,17 +27,18 @@ const ItemForm = (props) => {
             .then(_ => setRedirect(true))
             .catch(_ => { });
     };
-    // const handleChange = (e, { name, value }) => {
-    //     e.preventDefault();
-    //     switch (name) {
-    //         case 'categoryOption':
-    //             if (value !== 'default')
-    //                 setSelectedCategory(value);
-    //             break;
-    //         default:
-    //             break;
-    //     };
-    // };
+    /* Change handler for select 
+        const handleChange = (e, { name, value }) => {
+            e.preventDefault();
+            switch (name) {
+                case 'categoryOption':
+                    if (value !== 'default')
+                        setSelectedCategory(value);
+                    break;
+                default:
+                    break;
+            };
+    }; */
 
     const renderItemForm = () => {
         const { category_id } = props.match.params;
@@ -64,7 +65,7 @@ const ItemForm = (props) => {
                             <Select compact options={options}
                                 name='categoryOption' value={category_id}
                                 disabled
-                                // onChange={handleChange}
+                            // onChange={handleChange}
                             />
                         </div>
                         {/* <Field name="category" type="text" component={TextInput} label="Category" /> */}
@@ -89,7 +90,7 @@ const validate = values => {
     return errors;
 };
 
-function mapStateToProps({ items, categories }) {
+const mapStateToProps = ({ items, categories }) => {
     return { items: items.items, categories: categories.categories };
 };
 

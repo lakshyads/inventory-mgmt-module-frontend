@@ -23,8 +23,8 @@ const HeaderComponent = (props) => {
 
     return (
         <Menu secondary size="huge">
-            {/* <Menu.Item href={props.auth ? viewRoutes.CATEGORY_DASHBOARD : viewRoutes.LANDING} name="Inventory Management For ABC" /> */}
-            <Menu.Header href={props.auth ? viewRoutes.CATEGORY_DASHBOARD : viewRoutes.LANDING} name="Inventory Management For ABC" />
+            <Menu.Item  href={props.auth ? viewRoutes.CATEGORY_DASHBOARD : viewRoutes.LANDING} name="Inventory Management For ABC" />
+            {/* <Menu.Header href={props.auth ? viewRoutes.CATEGORY_DASHBOARD : viewRoutes.LANDING} name="Inventory Management For ABC" /> */}
             <Menu.Menu position="right">
                 {renderContent()}
             </Menu.Menu>
